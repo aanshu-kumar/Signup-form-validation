@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-container">
+    <section>
+        <h1>Signup Form</h1>
+    </section>
+    <form>
+        <label>Email:</label>
+        <input class="email" onchange="checkmail()" type="text" placeholder="Example@example.com">
+        <p class="err-msg" style="display: block;">Make sure email is more than 3 characters and has @ and a . </p>
+        <label>Password:</label>
+        <input class="password" onchange="checkpassword()" autocomplete="current-password" type="password" placeholder="Enter your passwords">
+        <p class="err-msg">Make sure password is more than 8 characters.</p>
+        <p class="success-msg">All good to go!</p>
+        <button id="signup-btn" onclick="Signup()">Signup</button>
+    </form>
+</div>
+<script src="./script.js">
+</script>
+</body>
+</html>
